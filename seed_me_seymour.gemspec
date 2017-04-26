@@ -8,10 +8,10 @@ require 'seed_me_seymour/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "seed_me_seymour"
-  spec.version       = SeedMeSeymour::VERSION
+  spec.version       = '0.1.0'
   spec.authors       = ["Tony S.", "Brandon G." ]
   spec.email         = ["saric.tony@gmail.com\n", "bmg.oak@gmail.com\n"]
-
+  spec.licenses      = ['MIT']
   spec.summary       = %q{This gem will analyze your current database and make a seed file with pre-populated seed information using faker}
   spec.homepage      = "https://github.com/antoniosaric/seed_me_seymour"
 

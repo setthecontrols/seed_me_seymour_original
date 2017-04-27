@@ -1,18 +1,10 @@
-require_relative 'config/application'
-require 'active_support/inflector'
-require 'rails/engine'
-
+require_relative '../../config/application'
 # Rails.application.load_tasks
-
 namespace :seedme do
   desc "seedme creates a seeds file based on an application's models and those model's column type "
-  task :go do
-
-  # leaving this code in case we need the :environment do and next two lines.  they're currently at top and task excludes the environment
-  # task :go => :environment do
-  #   require 'active_support/inflector'
-  #   require 'rails/engine'
-
+  task :go => :environment do
+    require 'active_support/inflector'
+    require 'rails/engine'
 
     #determine the path to file
     path = File.expand_path('../', __FILE__)

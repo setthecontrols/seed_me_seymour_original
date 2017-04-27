@@ -1,9 +1,5 @@
-require_relative '../../config/application'
-
+require_relative 'config/application'
 # Rails.application.load_tasks
-
-
-
 namespace :seedme do
   desc "seedme creates a seeds file based on an application's models and those model's column type "
   task :go => :environment do
@@ -12,8 +8,8 @@ namespace :seedme do
 
     #determine the path to file
     path = File.expand_path('../', __FILE__)
-    fil_e = File.join(path, '../../db/schema.rb')
-    fi_le = File.join(path, '../../db/seeds.rb')
+    fil_e = File.join(path, 'db/schema.rb')
+    fi_le = File.join(path, 'db/seeds.rb')
     s = File.open(fil_e)
     #whipe everything from seed file
     File.open(fi_le, 'w') {|file| file.truncate(0) }

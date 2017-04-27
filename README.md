@@ -2,6 +2,7 @@
 
 
 2017/04/26 - working the kinks out
+
 Hi all - apologies to anyone that has downloaded our gem while this message is still up.  This is our first gem and it isn't behaving the same as a gem as it did
 while it was just local code.  So please bear with us and check back soon for updates letting you know all is working as expected!  Thanks!
 
@@ -9,11 +10,16 @@ SeedMeSeymour will analyze your schema and create a basic seed file based on its
 by analyzing models and associations, creating a seed file that addresses unconventional name associations, like:
 
 class Employee < ApplicationRecord
+
   has_many :subordinates, class_name: "Employee",
+
                           foreign_key: "manager_id"
 
+
   belongs_to :manager, class_name: "Employee"
+
 end
+
 
 
 

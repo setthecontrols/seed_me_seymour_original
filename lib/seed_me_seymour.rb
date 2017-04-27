@@ -1,7 +1,7 @@
 require "seed_me_seymour/version"
 require 'active_support/inflector'
 require 'rails/engine'
-require_relative '../tasks/seed_me_seymour'
+# require_relative '../tasks/seed_me_seymour'
 
 
 module SeedMeSeymour

@@ -4,11 +4,13 @@
 
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+tasks = File.expand_path('../tasks', __FILE__)
+$LOAD_PATH.unshift(tasks) unless $LOAD_PATH.include?(tasks)
 require 'seed_me_seymour/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "seed_me_seymour"
-  spec.version       = '0.1.9'
+  spec.version       = '0.1.17'
   spec.authors       = ["Tony S.", "Brandon G." ]
   spec.email         = ["saric.tony@gmail.com\n", "bmg.oak@gmail.com\n"]
   spec.licenses      = ['MIT']
@@ -29,7 +31,7 @@ Gem::Specification.new do |spec|
   end
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ["lib", "tasks"]
 
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"

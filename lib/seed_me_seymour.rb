@@ -2,7 +2,7 @@ require "seed_me_seymour/version"
 require 'active_support/inflector'
 require 'rails/engine'
 # Rails.application.load_tasks
-require 'tasks/seed_me_seymour.rake'
+# require 'tasks/seed_me_seymour.rake'
 
 
 module SeedMeSeymour

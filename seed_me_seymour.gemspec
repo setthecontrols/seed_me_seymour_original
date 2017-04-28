@@ -10,7 +10,7 @@ require 'seed_me_seymour/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "seed_me_seymour"
-  spec.version       = '0.1.20'
+  spec.version       = '0.1.21'
   spec.authors       = ["Tony S.", "Brandon G." ]
   spec.email         = ["saric.tony@gmail.com\n", "bmg.oak@gmail.com\n"]
   spec.licenses      = ['MIT']
